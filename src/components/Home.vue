@@ -1,5 +1,5 @@
 <template>
-	<Header class="flex bg-blue-700 justify-between items-center p-1 pr-5">
+	<Header class="flex bg-green-700 justify-between items-center p-1 pr-5">
 		<!--  -->
 		<p class="text-red-50 text-[25px] p-4">30 Widgets Marathon</p>
 		<div 
@@ -54,7 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 #search-box {
-  
+
 	.btn-search:focus ~ .icon-search {
 		color: black;
 	}
