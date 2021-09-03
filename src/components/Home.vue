@@ -54,6 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 #search-box {
+  
 	.btn-search:focus ~ .icon-search {
 		color: black;
 	}
