@@ -1,27 +1,21 @@
 <template>
-	<Header class="flex bg-green-700 justify-between items-center p-1 pr-5">
-		<!--  -->
-		<p class="text-red-50 text-[25px] p-4">30 Widgets Marathon</p>
-		<div 
+  		<div 
       id="search-box" 
-      class="relative rounded-md"
+      class="h-16 rounded-md flex items-center p-4"
     >
 			<button
 				class="
 					btn-search
-					absolute top-0 left-0
 					cursor-pointer
 					text-lg
 					h-[40] w-[50]
-					outline-none
 				"
 			>
 				<Icon
 					icon="bx:bx-search-alt"
 					class="
             icon-search 
-            text-white outline-none 
-            absolute right-0 top-1
+            outline-none 
             "
 					height="36"
 				/>
@@ -29,17 +23,16 @@
 			<input
         type="text"
 				class="
+          shadow-sm
 					input-search
-					bg-transparent
 					text-sm
 					h-[40px] w-[0px]
 					rounded-md
-					outline-none
+          outline-none
 				"
 				placeholder="type to search..."
 			/>
 		</div>
-	</Header>
 </template>
 
 <script>
@@ -55,29 +48,28 @@ export default {
 <style lang="scss" scoped>
 #search-box {
 
-	.btn-search:focus ~ .icon-search {
-		color: black;
-	}
 	.btn-search:focus ~ .input-search {
 		width: 180px;
 		background-color: #fff;
-    border-left-width: 8px;
-    border-color: transparent;
-		transition: all 400ms cubic-bezier(0,-0.23,.35,2);
+    border: 3px solid gray;
+    padding: 0.5rem;
+		transition: all 300ms cubic-bezier(0,-0.23,.35,2);
 	}
+  .btn-search:focus ~ .input-search::placeholder {
+    color: grey;
+		font-weight:200;
+  }
   .input-search {
-    transition: all .3s ease-in-out;
+    transition: all .2s;
   }
 	.input-search::placeholder {
-		margin-left: 0.5rem;
-		color: black;
-		font-weight: 200;
+		color: grey;
+		font-weight:200;
 	}
   .input-search:focus {
+    border: 3px solid black;
     width: 180px;
-    background-color: #fff;
-    border-left-width: 8px;
-    border-color: transparent;
+    padding: 0.5rem;
   }
 }
 </style>
