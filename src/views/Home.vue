@@ -24,11 +24,13 @@
       <div class="font-bold text-shadow">(preparing...)</div>
     </div>
 
+    <router-link to="/3">
     <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
       <div class="font-bold text-shadow">#3</div>
       <p class="font-bold text-shadow">Covid 19 Tracker</p>
-      <div class="font-bold text-shadow">(preparing...)</div>
+      <div class="font-bold text-shadow"></div>
     </div>
+    </router-link>
 
     <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
       <div class="font-bold text-shadow">#4</div>
@@ -36,67 +38,67 @@
       <div class="font-bold text-shadow">(preparing...)</div>
     </div>
 
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
 
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
 
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
     
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-        <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+        <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-        <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+    <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
     </div>
 </div>
@@ -122,12 +124,12 @@
 </style>
 
 <script>
-import searchBox from '../components/searchBox.vue'
+import SearchBox from '../components/SearchBox.vue'
 
 export default {
   name: 'Home',
   components: {
-    searchBox,
+    SearchBox,
   }
 }
 </script>

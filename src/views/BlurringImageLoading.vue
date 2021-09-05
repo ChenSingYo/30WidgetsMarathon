@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import homeButton from '../components/homeButton.vue'
+import homeButton from '../components/HomeButton.vue'
 import { ref } from 'vue'
 
 export default {
@@ -26,8 +26,8 @@ export default {
     homeButton,
   },
   setup () {
-    const loadNum = ref(1)
-    const blurNum = ref(30)
+    let loadNum = ref(1)
+    let blurNum = ref(30)
     const blurring = () => {
       loadNum++
     }
