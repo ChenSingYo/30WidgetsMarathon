@@ -74,7 +74,7 @@ export default {
 }
 
 /* smartphones, touchscreens */
-@media (pointer: coarse) and (any-pointer: fine) {
+@media (pointer: coarse) {
 		.btn-search:hover ~ .input-search,
 		.btn-search:active ~ .input-search {
 		width: 180px;
