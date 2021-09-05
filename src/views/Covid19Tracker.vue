@@ -1,5 +1,5 @@
 <template>
-  <home-button/>
+  <home-btn/>
   <div class="mt-20 bg-gray-200 h-full w-[80vw] shadow-md rounded-md">
     <!-- Header -->
     <header class="w-full text-center bg-green-800 text-white p-4 mb-10 rounded-t-md">
@@ -38,7 +38,7 @@
 
 <script>
 import { Icon } from '@iconify/vue'
-import HomeButton from '../components/HomeButton.vue'
+import HomeBtn from '../components/HomeBtn.vue'
 import CountrySelect from '../components/covid19-tracker/CountrySelect.vue'
 import DataBoxes from '../components/covid19-tracker/DataBoxes.vue'
 import DataTitle from '../components/covid19-tracker/DataTitle.vue'
@@ -48,7 +48,7 @@ export default {
   name: 'Covid 19 Tracker',
   components: {
     Icon,
-    HomeButton,
+    HomeBtn,
     DataTitle,
     DataBoxes,
     CountrySelect

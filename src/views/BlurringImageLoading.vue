@@ -1,5 +1,5 @@
 <template>
-<home-button/>
+<home-btn/>
 
 <section>
   <div 
@@ -17,13 +17,13 @@
 </template>
 
 <script>
-import homeButton from '../components/HomeButton.vue'
+import homeBtn from '../components/HomeBtn.vue'
 import { ref } from 'vue'
 
 export default {
   name: '#1. BlurringImageLoading',
   components: {
-    homeButton,
+    homeBtn,
   },
   setup () {
     let loadNum = ref(1)

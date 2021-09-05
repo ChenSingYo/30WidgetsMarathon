@@ -124,7 +124,7 @@
 </style>
 
 <script>
-import SearchBox from '../components/SearchBox.vue'
+import SearchBox from '../components/home/SearchBox.vue'
 
 export default {
   name: 'Home',
