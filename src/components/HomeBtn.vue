@@ -13,11 +13,9 @@
         hover:text-gray-800
         rounded-full "
     >
-    				<Icon
+    		<Icon
 					icon="mi:home"
-					class="
-            outline-none 
-            "
+					class="outline-none"
 					height="36"
 				/>
     </div>
