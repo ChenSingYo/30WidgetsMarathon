@@ -13,9 +13,7 @@
     <!-- Main -->
     <main class="p-10 pt-1" v-if="!loading">
       <DataTitle :dataDate="dataDate" :text="title" />
-
       <DataBoxes :stats="status" />
-
       <CountrySelect :countries="countries" @get-country="getCountryData" />
 
       <button
@@ -54,19 +52,26 @@ export default {
     CountrySelect
   },
   setup () {
+    // 透過 ref()來包裝原始型別、物件、陣列
     const loading = ref(true)
     const title = ref('Global')
     const dataDate = ref('')
     const status = ref({})
     const countries = ref([])
+
+    // 透過api取得資料
     const fetchCovidData = async () => {
       const res = await fetch('https://api.covid19api.com/summary')
       return await res.json()
     }
+
+    // 取得特定國家的疫情資料
     const getCountryData = country => {
       status.value = country
       title.value = country.Country
     }
+
+    // 重新透過api取得資料，然後將value改為Global
     const clearCountryData = async () => {
       loading.value = true
       const data = await fetchCovidData()
@@ -74,6 +79,7 @@ export default {
       status.value = data.Global
       loading.value = false
     }
+
     const baseSetup = async () => {
       const data = await fetchCovidData()
       dataDate.value = data.Date
@@ -81,7 +87,10 @@ export default {
       countries.value = data.Countries
       loading.value = false
     }
+    // 呼叫函式baseSetup來調用fetchCovidData
     baseSetup()
+
+    // 回傳定義好的資料，渲染到template上的子組件
     return {
       loading,
       title,
