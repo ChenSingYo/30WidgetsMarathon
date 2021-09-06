@@ -94,10 +94,6 @@ export default {
     width: 180px;
     padding: 0.5rem;
   }
-
-	.input-search {
-		width: 0px;
-	}
 }
 
 </style>

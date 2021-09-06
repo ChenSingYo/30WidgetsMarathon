@@ -6,6 +6,7 @@
         flex justify-center items-center
         w-[50px] h-[50px]
         border-2
+        bg-white
         border-gray-500
         text-gray-600
         shadow

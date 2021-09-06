@@ -43,7 +43,7 @@ import DataTitle from '../components/covid19-tracker/DataTitle.vue'
 import { ref } from 'vue'
 
 export default {
-  name: 'Covid 19 Tracker',
+  name: '#3. Covid 19 Tracker',
   components: {
     Icon,
     HomeBtn,
