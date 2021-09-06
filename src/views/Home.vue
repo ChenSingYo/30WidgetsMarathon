@@ -21,7 +21,6 @@
       <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
         <div class="font-bold text-shadow">#2</div>
         <p class="font-bold text-shadow">Cards Expanding</p>
-        <div class="font-bold text-shadow">(preparing...)</div>
       </div>
     </router-link>
 

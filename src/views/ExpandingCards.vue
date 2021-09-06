@@ -9,7 +9,8 @@
 			justify-center
 			items-center
 			overflow-hidden
-      mt-10
+      mt-5
+      md:m-10
 		"
 	>
 		<div
@@ -106,7 +107,7 @@ div {
 		h3 {
 			font-size: 24px;
 			position: absolute;
-			bottom: 14%;
+			bottom: 7%;
 			left: 1%;
 			opacity: 0;
 		}
