@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import BlurringImageLoading from '../views/BlurringImageLoading.vue'
 import Covid19Tracker from '../views/Covid19Tracker.vue'
+import ExpandingCards from '../views/ExpandingCards.vue'
 const routes = [
   {
     // 須先設定根路徑
@@ -13,6 +14,11 @@ const routes = [
     path: '/1',
     name: 'Blurring Image Loading',
     component: BlurringImageLoading
+  },
+  {
+    path: '/2',
+    name: 'Expanding Cards',
+    component: ExpandingCards
   },
   {
     path: '/3',

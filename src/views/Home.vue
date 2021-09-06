@@ -14,15 +14,16 @@
     <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
       <div class="font-bold text-shadow">#1</div>
       <div class="font-bold text-shadow">Blurring Image Loading</div>
-      <div class="font-bold text-shadow">(preparing...)</div>
     </div>
     </router-link>
 
-    <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
-      <div class="font-bold text-shadow">#2</div>
-      <p class="font-bold text-shadow">Cards Expanding</p>
-      <div class="font-bold text-shadow">(preparing...)</div>
-    </div>
+    <router-link to="/2">
+      <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
+        <div class="font-bold text-shadow">#2</div>
+        <p class="font-bold text-shadow">Cards Expanding</p>
+        <div class="font-bold text-shadow">(preparing...)</div>
+      </div>
+    </router-link>
 
     <router-link to="/3">
     <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
