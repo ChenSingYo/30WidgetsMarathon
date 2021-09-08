@@ -9,12 +9,12 @@
 			justify-center
 			items-center
 			overflow-hidden
-      mt-5
-      md:m-10
+			mt-5
+			md:m-10
 		"
 	>
 		<div
-			v-for="(panel) in panels"
+			v-for="panel in panels"
 			class="panel"
 			:class="{ active: panel.isActive }"
 			@click="toggleValid(panel.id)"
@@ -40,44 +40,44 @@ export default {
 			{
 				url: 'https://unsplash.com/photos/J4yQp1lIJsQ/download?force=true&w=1920',
 				title: '2020 Tokyo Olympic',
-        isActive: false,
-        id:1
+				isActive: false,
+				id: 1,
 			},
 			{
 				url: 'https://unsplash.com/photos/3R4vPrSB1c4/download?force=true&w=1920',
 				title: 'Running',
-        isActive: false,
-        id:2
+				isActive: false,
+				id: 2,
 			},
 			{
 				url: 'https://unsplash.com/photos/hawN8XnaJuY/download?force=true&w=1920',
 				title: 'Swimming',
-        isActive: false,
-        id:3
+				isActive: false,
+				id: 3,
 			},
 			{
 				url: 'https://unsplash.com/photos/NCwfsHQvhy0/download?force=true&w=1920',
 				title: 'Baseball',
-        isActive: false,
-        id:4
+				isActive: false,
+				id: 4,
 			},
 			{
 				url: 'https://unsplash.com/photos/Yf1SegAI84o/download?force=true&w=1920',
 				title: 'Martial Art',
-        isActive: false,
-        id:5
+				isActive: false,
+				id: 5,
 			},
 		]
 
 		const panels = ref(panelArray)
 		const toggleValid = (id) => {
-      panels.value.forEach(function(panel){
-        if (id === panel.id) {
-          panel.isActive = !panel.isActive
-        } else {
-          panel.isActive = false
-        }
-      })
+			panels.value.forEach(function (panel) {
+				if (id === panel.id) {
+					panel.isActive = !panel.isActive
+				} else {
+					panel.isActive = false
+				}
+			})
 		}
 		return {
 			panels,
@@ -114,10 +114,10 @@ div {
 	}
 	.active {
 		flex: 5;
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
 		h3 {
 			opacity: 1;
 			transition: opacity 0.3s ease-in 0.4s;

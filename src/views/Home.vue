@@ -12,31 +12,32 @@
 
     <router-link to="/1">
     <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
-      <div class="font-bold text-shadow">#1</div>
+      <div class="font-bold text-shadow">#2</div>
       <div class="font-bold text-shadow">Blurring Image Loading</div>
     </div>
     </router-link>
 
     <router-link to="/2">
       <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
-        <div class="font-bold text-shadow">#2</div>
+        <div class="font-bold text-shadow">#3</div>
         <p class="font-bold text-shadow">Cards Expanding</p>
       </div>
     </router-link>
 
     <router-link to="/3">
     <div class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square">
-      <div class="font-bold text-shadow">#3</div>
+      <div class="font-bold text-shadow">#4</div>
       <p class="font-bold text-shadow">Covid 19 Tracker</p>
       <div class="font-bold text-shadow"></div>
     </div>
     </router-link>
 
+   <router-link to="/4">
     <div class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square">
-      <div class="font-bold text-shadow">#4</div>
+      <div class="font-bold text-shadow">#5</div>
       <p class="font-bold text-shadow">Q&A Section</p>
-      <div class="font-bold text-shadow">(preparing...)</div>
     </div>
+     </router-link>
 
     <div class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square">
       <p class="font-bold text-shadow">Preparing...</p>
