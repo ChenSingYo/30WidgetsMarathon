@@ -10,6 +10,11 @@ module.exports = {
       xs: '540px',
       ...defaultTheme.screens,
     },
+    fontFamily: {
+      sans: ['ui-sans-serif', 'system-ui'],
+      serif: ['ui-serif', 'Georgia'],
+      roboto: ['roboto', 'SFMono-Regular']
+    }
   },
   variants: {
     extend: {},
