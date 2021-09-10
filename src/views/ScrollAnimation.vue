@@ -10,7 +10,7 @@
 			font-roboto
 		"
 	>
-		<h1 class="font-bold text-3xl mt-10 mb-10">Scroll to see the animation</h1>
+		<h1 class="font-bold text-3xl mt-10 mb-10">Scroll to see the animation（測試中）</h1>
 		<div :ref="setBox" class="box show">
 			<h2>triggerBottom: {{ triggerBottom }}</h2>
 		</div>
@@ -59,21 +59,16 @@ export default {
 	},
 	setup() {
 		const triggerBottom = ref((window.innerHeight / 5) * 4)
-    const boxes = ref([])
-		const setBox = (el) => {
-       if (el) {
-         boxes.value.push(el)
-    }}
-    console.log(boxes.value)
-    const showArray = boxes.value.forEach(box => { 
-      console.log(box)
-    })
-    console.log(showArray)
+		const boxes = ref([])
+		const setBox = (el) => { boxes.value.push(el) }
+		console.log(boxes.value)
 
-    let boxTop = ref(0)
+		let boxTop = ref(0)
 
 		onMounted(() => {
-			// boxTop = box.value.getBoundingClientRect().top
+			[...boxes.value].forEach((box) => {
+        console.log(box)
+			})
 		})
 
 		return {
