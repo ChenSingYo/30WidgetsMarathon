@@ -4,7 +4,10 @@
 		class="
 			flex flex-col
 			items-center
-			justify-center
+			justify-start
+      pt-28
+      md:justify-center
+      md:pt-0
 			font-sans
 			w-[100vw]
 			h-[100vh]
@@ -12,22 +15,33 @@
 			bg-[#261c33]
 		"
 	>
-		<h2 class="text-[#8d81f3] text-center m-5 mt-0 text-5xl">
+		<h2
+			class="
+				text-[#8d81f3] text-center
+				font-extrabold
+				m-5
+				mt-0
+				text-3xl
+				md:text-5xl
+			"
+		>
 			CSS Perspective Playground
 		</h2>
 		<main
 			class="
-				flex
-				justify-around
+				flex flex-col
+				md:flex-row
 				items-center
 				h-[420px]
 				w-[600px]
 				font-serif
-				text-[22px] text-white
+				text-[20px] text-white
 			"
 		>
 			<section class="settings w-[50%] z-20">
-				<div class="settings-container">
+				<div
+					class="settings-container flex flex-col items-center md:items-start"
+				>
 					<label>perspective: {{ perspective }}px;</label>
 					<input type="range" min="0" max="999" v-model="perspective" />
 
@@ -39,9 +53,12 @@
 
 					<label>rotateZ: {{ rotateZ }}deg; </label>
 					<input type="range" min="-180" max="180" v-model="rotateZ" />
-
-					<button type="button" @click.prevent="reset">Reset</button>
-					<button type="button" @click.prevent="copy">Copy</button>
+				</div>
+				<div class="btnContainer flex flex-row justify-center mb-2 md:justify-start">
+					<button id="resetBtn" type="button" @click.prevent="reset">
+						Reset
+					</button>
+					<button id="copyBtn" type="button" @click.prevent="copy">Copy</button>
 				</div>
 			</section>
 			<section class="output w-[50%] z-20">
@@ -51,34 +68,15 @@
 			</section>
 		</main>
 	</div>
-  <css-doodle>
-  :doodle {
-    @grid: 1x3 / 100vmax;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: 0;
-    }
-
-    @size: 100% 150%;
-    position: absolute;
-
-    background: @m(100, (
-    linear-gradient(transparent, @p(
-    #FFFDE1@repeat(2, @p([0-9a-f])),
-    #FB3569@repeat(2, @p([0-9a-f]))
-    ))
-    @r(0%, 100%) @r(0%, 100%) /
-    @r(1px) @r(23vmin)
-    no-repeat
-    ));
-
-    will-change: transform;
-    animation: f 50s linear calc(-50s / @size() * @i()) infinite;
-    @keyframes f {
-    from { transform: translateY(-100%) }
-    to { transform: translateY(100%) }
-    }
-  </css-doodle>
+	<css-doodle>
+		:doodle { @grid: 1x3 / 100vmax; position: absolute; top: 0; left: 0;
+		z-index: 0; } @size: 100% 150%; position: absolute; background: @m(100, (
+		linear-gradient(transparent, @p( #FFFDE1@repeat(2, @p([0-9a-f])),
+		#FB3569@repeat(2, @p([0-9a-f])) )) @r(0%, 100%) @r(0%, 100%) / @r(1px)
+		@r(23vmin) no-repeat )); will-change: transform; animation: f 50s linear
+		calc(-50s / @size() * @i()) infinite; @keyframes f { from { transform:
+		translateY(-100%) } to { transform: translateY(100%) } }
+	</css-doodle>
 </template>
 
 <script>
@@ -89,7 +87,7 @@ import { computed, ref } from 'vue'
 export default {
 	name: '#15. CSS Perspective Playground',
 	components: {
-		homeBtn
+		homeBtn,
 	},
 	setup() {
 		const perspective = ref(100)
@@ -109,13 +107,18 @@ export default {
 		})
 
 		const reset = () => {
+			const resetBtn = document.getElementById('resetBtn')
+			resetBtn.innerText = 'Done!'
 			perspective.value = 100
 			rotateX.value = 0
 			rotateY.value = 0
 			rotateZ.value = 0
+			setTimeout(() => (resetBtn.innerText = 'Reset'), 800)
 		}
 
 		const copy = () => {
+			const copyBtn = document.getElementById('copyBtn')
+			copyBtn.innerText = 'Copied!'
 			const el = document.createElement('textarea')
 			el.setAttribute('readonly', '')
 			el.value = `transform: ${box.value.transform}`
@@ -123,6 +126,7 @@ export default {
 			el.select()
 			document.execCommand('copy')
 			document.body.removeChild(el)
+			setTimeout(() => (copyBtn.innerText = 'Copy'), 800)
 		}
 
 		return {
@@ -149,17 +153,16 @@ main {
 		margin-bottom: 10px;
 		width: 200px;
 	}
-	.settings-container {
-		button {
-			background-color: #8d81f3;
-			color: #fff;
-			display: inline-block;
-			font-size: 20px;
-			padding: 10px;
-			outline: none;
-			border: none;
-			margin-right: 10px;
-		}
+	button {
+		margin-bottom: 2px;
+		width: 30%;
+		background-color: #8d81f3;
+		color: #fff;
+		font-size: 20px;
+		padding: 10px;
+		outline: none;
+		border: none;
+		margin-right: 10px;
 	}
 	.output {
 		.box-container {
