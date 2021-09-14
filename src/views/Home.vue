@@ -92,7 +92,7 @@
 				class="
 					card
 					h-[100px]
-					bg-green-600
+					bg-gray-600
 					hover:bg-green-500
 					xs:h-auto xs:square
 				"
@@ -126,33 +126,43 @@
 			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
 		>
 			<div class="font-bold text-shadow-sm">#10</div>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
+			<p class="font-bold text-shadow-sm">Drag & Drop</p>
 		</div>
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
 		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
+			<div class="font-bold text-shadow-sm">#11</div>
+			<p class="font-bold text-shadow-sm">Theme Clock</p>
 		</div>
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
 		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
+		<div class="font-bold text-shadow-sm">#12</div>
+			<p class="font-bold text-shadow-sm">Drawing Canvas</p>
 		</div>
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
 		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
+		<div class="font-bold text-shadow-sm">#13</div>
+			<p class="font-bold text-shadow-sm">Split Lading Page</p>
 		</div>
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
 		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
+		<div class="font-bold text-shadow-sm">#14</div>
+			<p class="font-bold text-shadow-sm">RGB/HEX Converter</p>
 		</div>
+
+		<router-link to="/15">
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
+			class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square"
 		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
+		<div class="font-bold text-shadow-sm">#15</div>
+			<p class="font-bold text-shadow-sm">CSS Perspective</p>
 		</div>
+		</router-link>
+
+
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
 		>

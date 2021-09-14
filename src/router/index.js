@@ -5,6 +5,7 @@ import Covid19Tracker from '../views/Covid19Tracker.vue'
 import ExpandingCards from '../views/ExpandingCards.vue'
 import SectionQA from '../views/SectionQA.vue'
 import ScrollAnimation from '../views/ScrollAnimation.vue'
+import PerspectivePlayground from '../views/PerspectivePlayground.vue'
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: '/6',
     name: 'Scroll Animation',
     component: ScrollAnimation
+  },
+  {
+    path: '/15',
+    name: 'CSS Perspective',
+    component: PerspectivePlayground
   }
 ]
 
