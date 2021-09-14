@@ -12,7 +12,8 @@
         shadow
         hover:shadow-sm
         hover:text-gray-800
-        rounded-full "
+        rounded-full 
+        z-50"
     >
     		<Icon
 					icon="mi:home"
