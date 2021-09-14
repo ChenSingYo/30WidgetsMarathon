@@ -2,6 +2,7 @@
 	<home-btn />
 	<div
 		class="
+      relative
 			flex flex-col
 			items-center
 			justify-start
@@ -13,6 +14,7 @@
 			h-[100vh]
 			m-0
 			bg-[#261c33]
+      overflow-hidden
 		"
 	>
 		<h2
@@ -67,8 +69,7 @@
 				</div>
 			</section>
 		</main>
-	</div>
-	<css-doodle>
+    	<css-doodle>
 		:doodle { @grid: 1x3 / 100vmax; position: absolute; top: 0; left: 0;
 		z-index: 0; } @size: 100% 150%; position: absolute; background: @m(100, (
 		linear-gradient(transparent, @p( #FFFDE1@repeat(2, @p([0-9a-f])),
@@ -77,6 +78,7 @@
 		calc(-50s / @size() * @i()) infinite; @keyframes f { from { transform:
 		translateY(-100%) } to { transform: translateY(100%) } }
 	</css-doodle>
+	</div>
 </template>
 
 <script>
