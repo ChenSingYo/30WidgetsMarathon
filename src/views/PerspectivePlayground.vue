@@ -6,7 +6,7 @@
 			flex flex-col
 			items-center
 			justify-start
-      pt-28
+      pt-14
       md:justify-center
       md:pt-0
 			font-sans
@@ -23,7 +23,7 @@
 				font-extrabold
 				m-5
 				mt-0
-				text-3xl
+				text-2xl
 				md:text-5xl
 			"
 		>
