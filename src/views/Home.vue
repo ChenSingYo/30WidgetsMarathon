@@ -5,9 +5,9 @@
 			grid
 			gap-4
 			max-w-7xl
-			xs:grid-cols-2 xs:gap-6
-			md:grid-cols-4 md:gap-4
-			lg:gap-6
+			xs:grid-cols-2 xs:gap-4
+			md:grid-cols-4 md:gap-6
+			lg:gap-8
 		"
 	>
 		<header class="h-auto mt-10 flex flex-col xs:col-span-2 mb-3">
@@ -162,12 +162,16 @@
 		</div>
 		</router-link>
 
-
+		<router-link to="/16">
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
+			class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square"
 		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
+			<div class="font-bold text-shadow-sm">#16</div>
+			<p class="font-bold text-shadow-sm">Quiz App</p>
 		</div>
+		</router-link>
+
+
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
 		>
@@ -218,6 +222,7 @@
 
 <style lang="scss" scoped>
 .card {
+	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

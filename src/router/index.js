@@ -6,6 +6,7 @@ import ExpandingCards from '../views/ExpandingCards.vue'
 import SectionQA from '../views/SectionQA.vue'
 import ScrollAnimation from '../views/ScrollAnimation.vue'
 import PerspectivePlayground from '../views/PerspectivePlayground.vue'
+import QuizApp from '../views/QuizApp.vue'
 
 const routes = [
   {
@@ -43,6 +44,11 @@ const routes = [
     path: '/15',
     name: 'CSS Perspective',
     component: PerspectivePlayground
+  },
+  {
+    path: '/16',
+    name: 'Quiz App',
+    component: QuizApp
   }
 ]
 
