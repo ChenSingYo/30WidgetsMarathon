@@ -14,7 +14,7 @@
 			"
 			:style="bgOpacity"
 		></div>
-		<div class="text-position text-5xl text-white" :style="textOpacity">
+		<div class="text-position text-5xl text-gray-400" :style="textOpacity">
 			{{ loadNum }}%
 		</div>
 	</section>

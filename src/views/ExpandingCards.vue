@@ -4,8 +4,6 @@
 		class="
 			container
 			flex
-			w-[100vw]
-			h-[100vh]
 			justify-center
 			items-center
 			overflow-hidden
@@ -20,7 +18,7 @@
 			@click="toggleValid(panel.id)"
 			:key="panel.id"
 		>
-			<img :src="panel.url" class="h-[70vh] rounded-3xl object-cover" />
+			<img :src="panel.url" class="h-[70vh] w-[70vw] rounded-3xl object-cover" />
 			<h3 class="text-gray-800">{{ panel.title }}</h3>
 		</div>
 	</div>
@@ -103,7 +101,7 @@ div {
 		flex: 0.5;
 		margin: 10px;
 		position: relative;
-		transition: flex 0.5s ease-in;
+		transition: flex .5s ease-in;
 		h3 {
 			font-size: 24px;
 			position: absolute;
