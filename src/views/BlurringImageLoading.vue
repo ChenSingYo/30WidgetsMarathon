@@ -14,7 +14,7 @@
 			"
 			:style="bgOpacity"
 		></div>
-		<div class="text-position text-5xl text-gray-400" :style="textOpacity">
+		<div class="text-position text-5xl text-gray-500" :style="textOpacity">
 			{{ loadNum }}%
 		</div>
 	</section>
@@ -30,7 +30,7 @@ export default {
 		homeBtn,
 	},
 	setup() {
-		let loadNum = ref(1)
+		let loadNum = ref(0)
 		const scale = (num, in_min, in_max, out_min, out_max) => {
 			return (
 				((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
@@ -39,7 +39,7 @@ export default {
 
 		const bgOpacity = computed(() => {
 			return {
-				filter: `blur(${scale(loadNum.value, 0, 100, 30, 0)}px)`,
+				filter: `blur(${scale(loadNum.value, 0, 100, 70, 0)}px)`,
 			}
 		})
 		const textOpacity = computed(() => {
@@ -55,7 +55,7 @@ export default {
 			}
 		}
 
-		const timer = setInterval(blurring, 30)
+		const timer = window.setTimeout(() => setInterval(blurring, 25), 500)
 
 		return {
 			timer,
