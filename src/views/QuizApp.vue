@@ -19,13 +19,13 @@
 			id="quiz-container"
 		>
 			<div id="quiz-header" class="p-12 flex flex-col justify-around">
-				<questions
-					v-if="quizAnswered < quizData.length"
-					:quizData="quizData"
-					:quizAnswered="quizAnswered"
-					@check-answer="checkAnswer"
-				/>
-				<result v-else :score="score" />
+					<questions
+						v-if="quizAnswered < quizData.length"
+						:quizData="quizData"
+						:quizAnswered="quizAnswered"
+						@check-answer="checkAnswer"
+					/>
+					<result v-else :score="score" />
 				<button
 					id="Reset"
 					class="
@@ -36,8 +36,7 @@
 						font-normal
 						w-[15%]
 						cursor-pointer
-            mt-3
-						
+						mt-3
 						rounded-3xl
 					"
 					@click.prevent="reset"
@@ -177,4 +176,5 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
