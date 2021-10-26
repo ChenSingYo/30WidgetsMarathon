@@ -4,10 +4,11 @@
 		class="
 			grid
 			gap-4
-			max-w-7xl
+			max-w-8xl
+			p-5
 			xs:grid-cols-2 xs:gap-4
-			md:grid-cols-4 md:gap-6
-			lg:gap-8
+			md:grid-cols-4 md:gap-5
+			lg:grid-cols-5 lg:gap-6
 		"
 	>
 		<header class="h-auto mt-10 flex flex-col xs:col-span-2 mb-3">
@@ -22,7 +23,17 @@
 		<div
 			class="relative xs:col-span-2 mt-10 flex xs:justify-start md:justify-end"
 		>
-			<div class="absolute top-[-22%] md:top-[-15%] md:right-0 font-bold text-shadow-sm">#1</div>
+			<div
+				class="
+					absolute
+					top-[-22%]
+					md:top-[-15%] md:right-0
+					font-bold
+					text-shadow-sm
+				"
+			>
+				#1
+			</div>
 			<search-box />
 		</div>
 
@@ -87,90 +98,179 @@
 			</div>
 		</router-link>
 
-		<router-link to="/6">
+		<a href="https://codepen.io/zyrxdkoz/pen/dyROrLB" target="_blank">
 			<div
 				class="
 					card
 					h-[100px]
-					bg-gray-600
+					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
 				"
 			>
 				<div class="font-bold text-shadow-sm">#6</div>
-				<p class="font-bold text-shadow-sm">Scroll Animation</p>
+				<span class="font-bold text-shadow-sm">Scroll Animation</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<a href="https://codepen.io/zyrxdkoz/pen/rNwWgrM" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-yellow-500
+					hover:bg-yellow-400
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#7</div>
+				<span class="font-bold text-shadow-sm">Progress Steps</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<a href="https://codepen.io/zyrxdkoz/pen/yLXgxOp" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-yellow-500
+					hover:bg-yellow-400
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#8</div>
+				<span class="font-bold text-shadow-sm">Button Ripple Effect</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<a href="https://codepen.io/zyrxdkoz/pen/rNwywyj" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-green-600
+					hover:bg-green-500
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#9</div>
+				<span class="font-bold text-shadow-sm">Netfilx Navigation</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<a href="https://codepen.io/zyrxdkoz/pen/MWomYzG" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-yellow-500
+					hover:bg-yellow-400
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#10</div>
+				<span class="font-bold text-shadow-sm">Drag & Drop</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<a href="https://codepen.io/zyrxdkoz/pen/dyRWKZM" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-green-600
+					hover:bg-green-500
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#11</div>
+				<span class="font-bold text-shadow-sm">Theme Clock</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<a href="https://codepen.io/zyrxdkoz/pen/oNwwXvr" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-green-600
+					hover:bg-green-500
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#12</div>
+				<span class="font-bold text-shadow-sm">Drawing Canvas</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<a href="https://codepen.io/zyrxdkoz/pen/yLXXjga" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-yellow-500
+					hover:bg-yellow-400
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#13</div>
+				<span class="font-bold text-shadow-sm">Split Lading Page</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<a href="https://codepen.io/zyrxdkoz/pen/rNLjpPr" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-green-600
+					hover:bg-green-500
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#14</div>
+				<span class="font-bold text-shadow-sm">RGB/HEX Converter</span>
+				<span>(codepen)</span>
+			</div>
+		</a>
+
+		<router-link to="/15">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-green-600
+					hover:bg-green-500
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#15</div>
+				<p class="font-bold text-shadow-sm">CSS Perspective</p>
 			</div>
 		</router-link>
 
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
-		>
-			<div class="font-bold text-shadow-sm">#7</div>
-			<p class="font-bold text-shadow-sm">Progress Steps</p>
-		</div>
-
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
-		>
-			<div class="font-bold text-shadow-sm">#8</div>
-			<p class="font-bold text-shadow-sm">Button Ripple Effect</p>
-		</div>
-
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
-		>
-			<div class="font-bold text-shadow-sm">#9</div>
-			<p class="font-bold text-shadow-sm">Netfilx Navigation</p>
-		</div>
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
-		>
-			<div class="font-bold text-shadow-sm">#10</div>
-			<p class="font-bold text-shadow-sm">Drag & Drop</p>
-		</div>
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
-		>
-			<div class="font-bold text-shadow-sm">#11</div>
-			<p class="font-bold text-shadow-sm">Theme Clock</p>
-		</div>
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
-		>
-		<div class="font-bold text-shadow-sm">#12</div>
-			<p class="font-bold text-shadow-sm">Drawing Canvas</p>
-		</div>
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
-		>
-		<div class="font-bold text-shadow-sm">#13</div>
-			<p class="font-bold text-shadow-sm">Split Lading Page</p>
-		</div>
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
-		>
-		<div class="font-bold text-shadow-sm">#14</div>
-			<p class="font-bold text-shadow-sm">RGB/HEX Converter</p>
-		</div>
-
-		<router-link to="/15">
-		<div
-			class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square"
-		>
-		<div class="font-bold text-shadow-sm">#15</div>
-			<p class="font-bold text-shadow-sm">CSS Perspective</p>
-		</div>
-		</router-link>
-
 		<router-link to="/16">
-		<div
-			class="card h-[100px] bg-yellow-500 hover:bg-yellow-400 xs:h-auto xs:square"
-		>
-			<div class="font-bold text-shadow-sm">#16</div>
-			<p class="font-bold text-shadow-sm">Quiz App</p>
-		</div>
+			<div
+				class="
+					card
+					h-[100px]
+					bg-yellow-500
+					hover:bg-yellow-400
+					xs:h-auto xs:square
+				"
+			>
+				<div class="font-bold text-shadow-sm">#16</div>
+				<p class="font-bold text-shadow-sm">Quiz App</p>
+			</div>
 		</router-link>
-
 
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
@@ -229,6 +329,7 @@
 	align-items: center;
 	color: white;
 	font-size: 15px;
+	text-align: center;
 }
 
 .text-shadow {
