@@ -271,12 +271,14 @@
 				<p class="font-bold text-shadow-sm">Quiz App</p>
 			</div>
 		</router-link>
-
+<a href="https://popworld-test.vercel.app/" target="_blank">
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
+			class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square"
 		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
+			<span class="font-bold text-shadow-sm">#17 ㄅㄆㄇㄈ</span>
+			<span>(pure JS)</span>
 		</div>
+		</a>
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
 		>
