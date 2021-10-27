@@ -128,18 +128,18 @@ export default {
 				],
 			},
 			{
-				q: 'What year was JavaScript launched?',
+				q: 'What year was Popworld launched?',
 				answers: [
 					{
-						text: '1996',
+						text: '2015',
 						is_correct: false,
 					},
 					{
-						text: '1995',
+						text: '2017',
 						is_correct: true,
 					},
 					{
-						text: '1994',
+						text: '2013',
 						is_correct: false,
 					},
 					{
