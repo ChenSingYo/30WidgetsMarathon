@@ -7,6 +7,7 @@ import SectionQA from '../views/SectionQA.vue'
 import ScrollAnimation from '../views/ScrollAnimation.vue'
 import PerspectivePlayground from '../views/PerspectivePlayground.vue'
 import QuizApp from '../views/QuizApp.vue'
+import BoPoMoFo from '../views/BoPoMoFo.vue'
 
 const routes = [
   {
@@ -49,6 +50,11 @@ const routes = [
     path: '/16',
     name: 'Quiz App',
     component: QuizApp
+  },
+  {
+    path: '/18',
+    name: 'BoPoMoFo',
+    component: BoPoMoFo
   }
 ]
 

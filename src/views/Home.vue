@@ -4,19 +4,19 @@
 		class="
 			grid
 			gap-4
-			max-w-8xl
+			max-w-10xl
+			mx-auto
 			p-5
-			xs:grid-cols-2 xs:gap-4
+			xs:grid-cols-2 xs:gap-2
+			sm:grid-cols-3 sm:gap-4
 			md:grid-cols-4 md:gap-5
 			lg:grid-cols-5 lg:gap-6
 		"
 	>
 		<header class="h-auto mt-10 flex flex-col xs:col-span-2 mb-3">
-			<h2 class="text-4xl text-black font-extrabold p-4 pt-1">
-				30 Widgets Marathon
-			</h2>
+			<h2 class="text-4xl text-black font-extrabold p-4 pt-1">UI Widgets</h2>
 			<h5 class="pl-4 text-[1rem] text-gray-700 font-normal">
-				2021 鐵人賽專案：30天30個widgets
+				自主練習的Widgets小作品
 			</h5>
 		</header>
 
@@ -48,7 +48,7 @@
 				"
 			>
 				<div class="font-bold text-shadow">#2</div>
-				<div class="font-bold text-shadow">Blurring Image Loading</div>
+				<div class="font-bold text-shadow">Img Loading</div>
 			</div>
 		</router-link>
 
@@ -110,7 +110,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#6</div>
 				<span class="font-bold text-shadow-sm">Scroll Animation</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -126,7 +126,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#7</div>
 				<span class="font-bold text-shadow-sm">Progress Steps</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -142,7 +142,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#8</div>
 				<span class="font-bold text-shadow-sm">Button Ripple Effect</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -158,7 +158,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#9</div>
 				<span class="font-bold text-shadow-sm">Netfilx Navigation</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -174,7 +174,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#10</div>
 				<span class="font-bold text-shadow-sm">Drag & Drop</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -190,7 +190,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#11</div>
 				<span class="font-bold text-shadow-sm">Theme Clock</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -206,7 +206,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#12</div>
 				<span class="font-bold text-shadow-sm">Drawing Canvas</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -222,7 +222,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#13</div>
 				<span class="font-bold text-shadow-sm">Split Lading Page</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -238,7 +238,7 @@
 			>
 				<div class="font-bold text-shadow-sm">#14</div>
 				<span class="font-bold text-shadow-sm">RGB/HEX Converter</span>
-				<span>(codepen)</span>
+				<small>( codepen )</small>
 			</div>
 		</a>
 
@@ -271,19 +271,37 @@
 				<p class="font-bold text-shadow-sm">Quiz App</p>
 			</div>
 		</router-link>
-<a href="https://popworld-test.vercel.app/" target="_blank">
-		<div
-			class="card h-[100px] bg-green-600 hover:bg-green-500 xs:h-auto xs:square"
-		>
-			<span class="font-bold text-shadow-sm">#17 ㄅㄆㄇㄈ</span>
-			<span>(pure JS)</span>
-		</div>
+		<a href="https://book-order-demo.vercel.app/" target="_blank">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-green-600
+					hover:bg-green-500
+					xs:h-auto xs:square
+				"
+			>
+				<span class="font-bold text-shadow-sm">#17</span>
+				<span>Order UI</span>
+				<small>( build by element ui )</small>
+			</div>
 		</a>
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
-		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
-		</div>
+		<router-link to="/18">
+			<div
+				class="
+					card
+					h-[100px]
+					bg-yellow-500
+					hover:bg-yellow-400
+					xs:h-auto xs:square
+				"
+			>
+				<p class="font-bold text-shadow-sm">#18</p>
+								<span>ㄅㄆㄇㄈ</span>
+				<small>( use Hanzi.js)</small>
+			</div>
+		</router-link>
+
 		<div
 			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
 		>
