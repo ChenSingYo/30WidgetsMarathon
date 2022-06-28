@@ -4,13 +4,13 @@
 		class="
 			grid
 			gap-4
-			max-w-10xl
+			max-w-12xl
 			mx-auto
-			p-5
+			p-2
 			xs:grid-cols-2 xs:gap-2
 			sm:grid-cols-3 sm:gap-4
-			md:grid-cols-4 md:gap-5
-			lg:grid-cols-5 lg:gap-6
+			md:grid-cols-4 md:gap-4
+			lg:grid-cols-5 lg:gap-4
 		"
 	>
 		<header class="h-auto mt-10 flex flex-col xs:col-span-2 mb-3">
@@ -41,7 +41,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-yellow-500
 					hover:bg-yellow-400
 					xs:h-auto xs:square
@@ -56,7 +55,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -71,7 +69,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -87,7 +84,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-yellow-500
 					hover:bg-yellow-400
 					xs:h-auto xs:square
@@ -102,7 +98,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -118,7 +113,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-yellow-500
 					hover:bg-yellow-400
 					xs:h-auto xs:square
@@ -134,7 +128,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-yellow-500
 					hover:bg-yellow-400
 					xs:h-auto xs:square
@@ -150,7 +143,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -166,7 +158,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-yellow-500
 					hover:bg-yellow-400
 					xs:h-auto xs:square
@@ -182,7 +173,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -198,7 +188,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -214,7 +203,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-yellow-500
 					hover:bg-yellow-400
 					xs:h-auto xs:square
@@ -230,7 +218,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -246,7 +233,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -261,7 +247,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-yellow-500
 					hover:bg-yellow-400
 					xs:h-auto xs:square
@@ -275,7 +260,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-green-600
 					hover:bg-green-500
 					xs:h-auto xs:square
@@ -290,7 +274,6 @@
 			<div
 				class="
 					card
-					h-[100px]
 					bg-yellow-500
 					hover:bg-yellow-400
 					xs:h-auto xs:square
@@ -303,37 +286,37 @@
 		</router-link>
 
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
+			class= "card disabled"
+		>
+			<p class="font-bold text-shadow-sm m-auto text-white">Preparing...</p>
+		</div>
+		<div
+			class="card disabled"
 		>
 			<p class="font-bold text-shadow-sm">Preparing...</p>
 		</div>
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
+			class="card disabled"
 		>
 			<p class="font-bold text-shadow-sm">Preparing...</p>
 		</div>
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
+			class="card disabled"
 		>
 			<p class="font-bold text-shadow-sm">Preparing...</p>
 		</div>
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
+			class="card disabled"
 		>
 			<p class="font-bold text-shadow-sm">Preparing...</p>
 		</div>
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
+			class="card disabled"
 		>
 			<p class="font-bold text-shadow-sm">Preparing...</p>
 		</div>
 		<div
-			class="card h-[100px] bg-gray-600 hover:bg-yellow-400 xs:h-auto xs:square"
-		>
-			<p class="font-bold text-shadow-sm">Preparing...</p>
-		</div>
-		<div
-			class="card h-[100px] bg-gray-600 hover:bg-green-500 xs:h-auto xs:square"
+			class="card disabled"
 		>
 			<p class="font-bold text-shadow-sm">Preparing...</p>
 		</div>
@@ -342,6 +325,7 @@
 
 <style lang="scss" scoped>
 .card {
+	height: 180px;
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
@@ -354,6 +338,10 @@
 
 .text-shadow {
 	text-shadow: grey 2px 2px 4px;
+}
+
+.card.disabled {
+	@apply bg-gray-600 hover:bg-gray-800 xs:h-auto xs:square flex
 }
 </style>
 
